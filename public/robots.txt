@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deadline-aman.vercel.app/sitemap.xml
