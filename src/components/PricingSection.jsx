@@ -1,4 +1,3 @@
-// src/components/PricingSection.jsx
 import { CheckCircle2 } from "lucide-react";
 
 const pricing = [

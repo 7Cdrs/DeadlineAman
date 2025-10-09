@@ -19,7 +19,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.1),transparent_40%)]"></div>
 
       {/* Badge */}
-      <div className="flex items-center gap-2 bg-blue-100 text-blue-700 font-medium px-4 py-1 rounded-full mb-6 z-10">
+      <div className="flex items-center gap-2 bg-blue-100 text-blue-700 font-medium px-4 py-1 rounded-full mt-24 mb-6 z-10">
         <Sparkles className="w-4 h-4" />
         <span>Solusi Digital Profesional</span>
       </div>
