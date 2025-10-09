@@ -47,7 +47,7 @@ const pricing = [
 
 export default function PricingSection() {
   return (
-    <section className="py-16 bg-blue-50 text-center">
+    <section id="pricing" className="py-16 bg-blue-50 text-center">
       <h2 className="text-3xl font-semibold text-blue-700 mb-10">Bundling & Harga</h2>
       <div className="grid gap-8 md:grid-cols-3 px-6 md:px-20">
         {pricing.map((item, index) => (

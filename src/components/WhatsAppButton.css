@@ -1,0 +1,94 @@
+/* From Uiverse.io by Gaurang7717 — Modified for smoother animation */
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background-color: #00d757;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  animation: float 3s ease-in-out infinite;
+  transition: all 0.35s ease-in-out;
+}
+
+.sign {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease-in-out;
+}
+
+.sign svg {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sign svg path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.35s ease-in-out;
+}
+
+.Btn:hover {
+  width: 160px;
+  border-radius: 45px;
+  box-shadow: 0 6px 20px rgba(0, 215, 87, 0.4);
+  transform: translateY(-3px);
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  padding-left: 10px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  padding-right: 12px;
+}
+
+.Btn:hover .sign svg {
+  transform: rotate(15deg) scale(1.05);
+}
+
+.Btn:active {
+  transform: scale(0.96);
+}
+
+/* 🌊 Efek melayang (floating) */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* 📍 Tetap di kanan bawah */
+.fixed-whatsapp {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
