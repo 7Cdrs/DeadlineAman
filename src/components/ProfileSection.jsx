@@ -3,12 +3,12 @@ export default function ProfileSection() {
     {
       name: "Hazel MpR",
       role: "Fullstack Developer",
-      image: "src/assets/profile.jpg",
+      image: "public/profile.jpg",
     },
     {
       name: "Zhulva Abhipraya",
       role: "Frontend Developer",
-      image: "src/assets/abhi.jpg",
+      image: "public/abhi.jpg",
     },
   ];
 
