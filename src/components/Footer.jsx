@@ -45,7 +45,7 @@ export default function Footer() {
       {/* Garis bawah dan hak cipta */}
       <div className="border-t border-blue-800 mt-10 pt-4 text-center text-blue-400 text-sm">
         <p>© {new Date().getFullYear()} <span className="text-white font-medium">DeadlineAman</span>. All rights reserved.</p>
-        <p className="mt-1">Dibangun dengan ❤️ menggunakan React & TailwindCSS</p>
+        <p className="mt-1">Kepuasan Anda adalah Prioritas Kami</p>
       </div>
     </footer>
   );

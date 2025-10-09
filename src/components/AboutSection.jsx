@@ -30,7 +30,7 @@ export default function AboutSection() {
           </div>
           <h3 className="text-xl font-semibold text-gray-800 mb-2">Tim Kolaboratif</h3>
           <p className="text-gray-600 text-sm leading-relaxed">
-            Kami bekerja dalam tim kecil yang solid — desainer, developer, dan kreator konten 
+            Kami bekerja dalam tim yang solid — desainer, developer, dan kreator konten 
             berkolaborasi untuk hasil maksimal sesuai kebutuhanmu.
           </p>
         </div>

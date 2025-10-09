@@ -20,7 +20,7 @@ export default function ContactSection() {
             </div>
             <div className="flex items-center gap-3">
               <Phone className="text-blue-600 w-5 h-5" />
-              <span>+62 812-3456-7890</span>
+              <span>+62 812-5205-1253</span>
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="text-blue-600 w-5 h-5" />
@@ -41,12 +41,7 @@ export default function ContactSection() {
             >
               Instagram
             </a>
-            <a
-              href="#"
-              className="text-blue-600 hover:text-blue-800 transition"
-            >
-              GitHub
-            </a>
+            
           </div>
         </div>
 

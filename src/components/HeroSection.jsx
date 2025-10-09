@@ -1,7 +1,15 @@
 // src/components/HeroSection.jsx
 import { ArrowRight, Sparkles } from "lucide-react";
+import { useState } from "react";
 
 export default function HeroSection() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    setTimeout(() => setIsClicked(false), 400); // reset animasi setelah 0.4 detik
+  };
+
   return (
     <section
       id="hero"
@@ -31,18 +39,42 @@ export default function HeroSection() {
 
       {/* CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 z-10">
-        <a
-          href="#projects"
-          className="flex items-center justify-center gap-2 px-8 py-3 bg-blue-600 text-white rounded-xl shadow-md hover:shadow-lg hover:bg-blue-700 transition font-semibold"
+        {/* Tombol Portofolio - dengan efek flash putih */}
+        <button
+          onClick={handleClick}
+          className={`relative overflow-hidden flex items-center justify-center gap-2 px-8 py-3 
+          bg-gradient-to-r from-sky-500 to-blue-500 text-white rounded-xl shadow-md 
+          hover:shadow-lg hover:from-sky-600 hover:to-blue-600 transition-all duration-300 
+          font-semibold [text-shadow:_0_1px_2px_rgba(0,0,0,0.25)] active:scale-95`}
         >
-          Lihat Portofolio
-          <ArrowRight className="w-4 h-4" />
-        </a>
+          <span
+            className={`absolute inset-0 bg-white/60 blur-lg rounded-xl opacity-0 transition-opacity duration-300 ${
+              isClicked ? "opacity-100" : ""
+            }`}
+          ></span>
+          <span className="relative flex items-center gap-2">
+            Lihat Portofolio
+            <ArrowRight className="w-4 h-4" />
+          </span>
+        </button>
+
+        {/* Tombol Konsultasi Gratis - efek glow elegan + transisi warna teks halus */}
         <a
           href="#contact"
-          className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition"
+          className="group relative px-8 py-3 border-2 border-sky-500 text-sky-600 rounded-xl font-semibold 
+          transition-all duration-300 active:scale-95 hover:bg-sky-500
+          hover:shadow-[0_0_15px_rgba(56,189,248,0.6)]"
         >
-          Konsultasi Gratis
+          <span
+            className="relative z-10 transition-all duration-500 text-sky-600 
+            group-hover:text-white group-hover:[text-shadow:_0_0_10px_rgba(255,255,255,0.9)]"
+          >
+            Konsultasi Gratis
+          </span>
+
+          {/* Efek glow animasi halus */}
+          <span className="absolute inset-0 rounded-xl bg-sky-500/20 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500"></span>
+          <span className="absolute inset-0 rounded-xl animate-ping bg-sky-400/10 opacity-0 group-hover:opacity-100"></span>
         </a>
       </div>
 
