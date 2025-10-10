@@ -33,7 +33,7 @@ export default function Footer() {
               <Mail className="w-4 h-4 text-blue-400" /> deadlineaman@gmail.com
             </li>
             <li className="flex justify-center md:justify-start items-center gap-2">
-              <Phone className="w-4 h-4 text-blue-400" /> +62 812-3456-7890
+              <Phone className="w-4 h-4 text-blue-400" /> +62 812-5205-1253
             </li>
             <li className="flex justify-center md:justify-start items-center gap-2">
               <MapPin className="w-4 h-4 text-blue-400" /> Surabaya, Indonesia
