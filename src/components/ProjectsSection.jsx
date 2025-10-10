@@ -36,7 +36,13 @@ const projects = [
     tech: ["n8n", "Telegram", "OpenAI API"],
     link: "https://www.linkedin.com/posts/hazelmpr_ternyata-asik-juga-explore-tools-automation-activity-7352517609805811714-Ychk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
   },
-  
+  {
+    name: "Aplikasi Toko Roti",
+    year: "2025",
+    desc: "Aplikasi Toko Roti adalah solusi digital untuk mengelola inventaris, pemesanan, dan pengiriman, dengan dukungan pembayaran terintegrasi serta layanan berbasis lokasi.",
+    tech: ["Flutter"],
+    link: "https://www.linkedin.com/posts/hazelmpr_bnsp-juniormobileprogrammer-activity-7351075589488791552-eMVb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
+  },
   
 ];
 
