@@ -16,7 +16,7 @@ export default function App() {
       <Title>Deadline Aman - Jasa Pembuatan Software & Website Custom</Title>
       <Meta
         name="description"
-        content="Deadline Aman adalah perusahaan pengembang software custom dan website profesional. Kami membantu bisnis Anda memiliki sistem digital yang efisien, cepat, dan aman."
+        content="Deadline Aman adalah penyedia jasa pembuatan software custom dan website profesional. Kami membantu bisnis Anda memiliki sistem digital yang efisien, cepat, dan aman."
       />
       <Meta
         name="keywords"

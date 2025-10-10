@@ -30,7 +30,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-white mb-3">Kontak</h3>
           <ul className="space-y-2 text-blue-300">
             <li className="flex justify-center md:justify-start items-center gap-2">
-              <Mail className="w-4 h-4 text-blue-400" /> deadlineaman@gmail.com
+              <Mail className="w-4 h-4 text-blue-400" /> info@deadlineaman.com
             </li>
             <li className="flex justify-center md:justify-start items-center gap-2">
               <Phone className="w-4 h-4 text-blue-400" /> +62 812-5205-1253

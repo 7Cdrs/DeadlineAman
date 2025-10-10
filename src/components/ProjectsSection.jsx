@@ -2,9 +2,9 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    name: "Aplikasi akuntansi dengan laporan keuangan otomatis",
+    name: "Website Keuangan",
     year: "2025",
-    desc: "Aplikasi akuntansi perusahaan berbasis Laravel dengan fitur manajemen akun & role, transaksi harian, dan laporan laba rugi otomatis",
+    desc: "Website akuntansi perusahaan berbasis Laravel dengan fitur manajemen akun & role, transaksi harian, dan laporan laba rugi otomatis",
     tech: ["Laravel", "MySQL"],
     link: "https://jaladewachampion.com/"
   },
@@ -22,6 +22,22 @@ const projects = [
     tech: ["TailwindCSS", "Laravel", "PostgreSQL"],
     link: "https://aqua-nova.tech/"
   },
+  {
+    name: "AJarin",
+    year: "2025",
+    desc: "AJarin adalah platform kursus online versi ringan yang menghadirkan pengalaman belajar modern dengan akses lifetime setelah pembayaran otomatis via Midtrans(Payment Gateway).",
+    tech: ["Flutter", "Laravel", "PostgreSQL"],
+    link: "https://www.linkedin.com/posts/hazelmpr_bangun-solusi-meski-dengan-keterbatasan-activity-7350281283681337346-9QUT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
+  },
+  {
+    name: "Chatbot AI untuk E-commerce",
+    year: "2025",
+    desc: "Chatbot AI untuk E-commerce adalah solusi cerdas yang membantu meningkatkan interaksi pelanggan dan penjualan melalui otomatisasi percakapan.",
+    tech: ["n8n", "Telegram", "OpenAI API"],
+    link: "https://www.linkedin.com/posts/hazelmpr_ternyata-asik-juga-explore-tools-automation-activity-7352517609805811714-Ychk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
+  },
+  
+  
 ];
 
 export default function ProjectsSection() {
