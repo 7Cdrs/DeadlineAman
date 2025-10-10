@@ -9,11 +9,11 @@ async function generateSitemap() {
   // Daftar semua halaman utama di projectmu
   const links = [
     { url: "/", changefreq: "weekly", priority: 1.0 },
-    { url: "/about", changefreq: "monthly", priority: 0.8 },
-    { url: "/pricing", changefreq: "monthly", priority: 0.8 },
-    { url: "/projects", changefreq: "monthly", priority: 0.7 },
-    { url: "/contact", changefreq: "monthly", priority: 0.7 },
-    { url: "/profile", changefreq: "monthly", priority: 0.7 },
+    { url: "#about", changefreq: "monthly", priority: 0.8 },
+    { url: "#pricing", changefreq: "monthly", priority: 0.8 },
+    { url: "#projects", changefreq: "monthly", priority: 0.7 },
+    { url: "#contact", changefreq: "monthly", priority: 0.7 },
+    { url: "#profile", changefreq: "monthly", priority: 0.7 },
   ];
 
   const sitemap = new SitemapStream({ hostname: SITE_URL });
