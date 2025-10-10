@@ -2,25 +2,25 @@ import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    name: "Sistem Booking Hotel",
+    name: "Aplikasi akuntansi dengan laporan keuangan otomatis",
+    year: "2025",
+    desc: "Aplikasi akuntansi perusahaan berbasis Laravel dengan fitur manajemen akun & role, transaksi harian, dan laporan laba rugi otomatis",
+    tech: ["Laravel", "MySQL"],
+    link: "https://jaladewachampion.com/"
+  },
+  {
+    name: "Scheduro",
+    year: "2025",
+    desc: "Produk ini berfokus membantu freelancer dan mahasiswa agar lebih produktif lewat fitur AI-driven Task Breakdown, kanban board sederhana, serta pengingat otomatis via WhatsApp.",
+    tech: ["Next.js", "TailwindCSS", "Express.js", "PostgreSQL"],
+    link: "https://scheduro.com/"
+  },
+  {
+    name: "AquaNova",
     year: "2024",
-    desc: "Aplikasi reservasi dengan dashboard admin, laporan harian, dan fitur manajemen kamar.",
-    tech: ["React", "Laravel", "MySQL"],
-    link: "#"
-  },
-  {
-    name: "E-Commerce UMKM",
-    year: "2023",
-    desc: "Platform toko online untuk UMKM dengan integrasi pembayaran otomatis dan notifikasi realtime.",
-    tech: ["Next.js", "TailwindCSS", "Midtrans API"],
-    link: "#"
-  },
-  {
-    name: "Aplikasi Inventori",
-    year: "2022",
-    desc: "Sistem manajemen stok barang dengan multi user role dan grafik analitik penjualan.",
-    tech: ["Vue", "Express", "MongoDB"],
-    link: "#"
+    desc: "Platform inovatif yang membantu industri akuakultur mengoptimalkan produksi ikan melalui pemantauan kualitas air secara real-time.",
+    tech: ["TailwindCSS", "Laravel", "PostgreSQL"],
+    link: "https://aqua-nova.tech/"
   },
 ];
 
