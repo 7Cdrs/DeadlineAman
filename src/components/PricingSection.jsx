@@ -9,7 +9,7 @@ const pricing = [
       "Domain .com + Hosting gratis 1 tahun",
       "3 halaman utama (Home, About, Contact)",
       "Desain responsif (mobile & desktop friendly)",
-      "Setup SEO dasar (meta tag, sitemap, Google indexing)",
+      "Setup SEO dasar (meta tag, Google indexing)",
       "Integrasi WhatsApp & Google Maps",
       "Maintenance gratis 1 bulan",
     ],
