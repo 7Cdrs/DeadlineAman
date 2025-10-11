@@ -1,11 +1,39 @@
 export default function handler(req, res) {
-  res.setHeader("Content-Type", "application/xml; charset=utf-8");
-  res.status(200).send(`<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://deadlineaman.my.id/</loc><priority>1.0</priority></url>
-  <url><loc>https://deadlineaman.my.id/#about</loc></url>
-  <url><loc>https://deadlineaman.my.id/#pricing</loc></url>
-  <url><loc>https://deadlineaman.my.id/#projects</loc></url>
-  <url><loc>https://deadlineaman.my.id/#contact</loc></url>
-</urlset>`);
+  res.setHeader("Content-Type", "application/xml");
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://www.deadlineaman.my.id/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.deadlineaman.my.id/#about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deadlineaman.my.id/#pricing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.deadlineaman.my.id/#projects</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.deadlineaman.my.id/#contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>`;
+
+  res.status(200).send(xml);
 }
