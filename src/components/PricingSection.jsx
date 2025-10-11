@@ -46,21 +46,20 @@ const pricing = [
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-16 bg-blue-50 text-center">
-      <h2 className="text-3xl font-semibold text-blue-700 mb-10">Bundling & Harga</h2>
+    <section id="pricing" className="py-16 bg-gray-50 text-center">
+      <h2 className="text-3xl font-semibold mb-10" style={{ color: '#38b6ff' }}>
+        Bundling & Harga
+      </h2>
       <div className="grid gap-8 md:grid-cols-3 px-6 md:px-20">
         {pricing.map((item, index) => (
           <div
             key={item.name}
-            className={`bg-white shadow-xl rounded-2xl p-8 border-t-4 ${
-              index === 1
-                ? "border-blue-600"
-                : index === 2
-                ? "border-purple-600"
-                : "border-cyan-500"
-            } hover:-translate-y-2 transition transform`}
+            className={`bg-white shadow-xl rounded-2xl p-8 border-t-4 hover:-translate-y-2 transition transform ${
+              index === 1 ? "scale-105" : ""
+            }`}
+            style={{ borderTopColor: '#38b6ff' }}
           >
-            <h3 className="text-2xl font-bold text-blue-600 mb-2">
+            <h3 className="text-2xl font-bold mb-2" style={{ color: '#38b6ff' }}>
               {item.name}
             </h3>
             <p className="text-3xl font-extrabold text-gray-800 mb-4">
@@ -71,13 +70,11 @@ export default function PricingSection() {
             <ul className="text-left space-y-2 mb-6">
               {item.features.map((feature, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <CheckCircle2 className="text-green-500 w-5 h-5 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 mt-0.5" style={{ color: '#38b6ff' }} />
                   <span className="text-gray-700 text-sm">{feature}</span>
                 </li>
               ))}
             </ul>
-
-            
           </div>
         ))}
       </div>

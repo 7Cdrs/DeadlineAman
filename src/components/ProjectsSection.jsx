@@ -43,24 +43,23 @@ const projects = [
     tech: ["Flutter"],
     link: "https://www.linkedin.com/posts/hazelmpr_bnsp-juniormobileprogrammer-activity-7351075589488791552-eMVb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
   },
-  
 ];
 
 export default function ProjectsSection() {
   return (
     <section id="projects" className="py-16 px-6 md:px-20 bg-white">
-      <h2 className="text-3xl font-semibold text-blue-700 mb-10 text-center">
+      <h2 className="text-3xl font-semibold text-[#38b6ff] mb-10 text-center">
         Capaian & Proyek
       </h2>
       <div className="grid md:grid-cols-3 gap-8">
         {projects.map((p) => (
           <div
             key={p.name}
-            className="bg-white/80 backdrop-blur-md border border-blue-100 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300"
+            className="bg-white/80 backdrop-blur-md border border-[#38b6ff]/20 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 hover:border-[#38b6ff]/40"
           >
             <div className="flex justify-between items-center mb-3">
-              <h3 className="text-xl font-semibold text-blue-700">{p.name}</h3>
-              <span className="text-sm text-blue-500">{p.year}</span>
+              <h3 className="text-xl font-semibold text-[#38b6ff]">{p.name}</h3>
+              <span className="text-sm text-[#38b6ff]/80">{p.year}</span>
             </div>
 
             <p className="text-gray-700 text-sm leading-relaxed mb-4">{p.desc}</p>
@@ -69,7 +68,7 @@ export default function ProjectsSection() {
               {p.tech.map((t) => (
                 <span
                   key={t}
-                  className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full font-medium"
+                  className="text-xs bg-[#38b6ff]/10 text-[#38b6ff] px-2 py-1 rounded-full font-medium border border-[#38b6ff]/20"
                 >
                   {t}
                 </span>
@@ -80,7 +79,7 @@ export default function ProjectsSection() {
               href={p.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition"
+              className="inline-flex items-center text-[#38b6ff] hover:text-[#2a9de6] font-medium transition"
             >
               Lihat Proyek <ExternalLink className="w-4 h-4 ml-1" />
             </a>

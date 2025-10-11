@@ -7,7 +7,7 @@ export default function ContactSection() {
         
         {/* Info Kontak */}
         <div>
-          <h2 className="text-3xl font-bold text-blue-700 mb-4">Hubungi Kami</h2>
+          <h2 className="text-3xl font-bold text-[#38b6ff] mb-4">Hubungi Kami</h2>
           <p className="text-gray-600 mb-6">
             Punya ide atau proyek yang ingin diwujudkan?  
             Kami siap bantu membangun solusi digital yang sesuai kebutuhanmu.
@@ -15,15 +15,15 @@ export default function ContactSection() {
 
           <div className="space-y-4 text-gray-700">
             <div className="flex items-center gap-3">
-              <Mail className="text-blue-600 w-5 h-5" />
+              <Mail className="text-[#38b6ff] w-5 h-5" />
               <span>info@deadlineaman.com</span>
             </div>
             <div className="flex items-center gap-3">
-              <Phone className="text-blue-600 w-5 h-5" />
+              <Phone className="text-[#38b6ff] w-5 h-5" />
               <span>+62 812-5205-1253</span>
             </div>
             <div className="flex items-center gap-3">
-              <MapPin className="text-blue-600 w-5 h-5" />
+              <MapPin className="text-[#38b6ff] w-5 h-5" />
               <span>Surabaya, Indonesia</span>
             </div>
           </div>
@@ -31,40 +31,39 @@ export default function ContactSection() {
           <div className="mt-6 flex gap-4">
             <a
               href="#"
-              className="text-blue-600 hover:text-blue-800 transition"
+              className="!text-[#38b6ff] hover:!text-[#2a9de6] transition font-medium"
             >
               LinkedIn
             </a>
             <a
               href="#"
-              className="text-blue-600 hover:text-blue-800 transition"
+              className="!text-[#38b6ff] hover:!text-[#2a9de6] transition font-medium"
             >
               Instagram
             </a>
-            
           </div>
         </div>
 
         {/* Form Kontak */}
-        <form className="bg-white shadow-xl rounded-2xl p-8 space-y-5 border border-blue-100">
+        <form className="bg-white shadow-xl rounded-2xl p-8 space-y-5 border border-[#38b6ff]/20">
           <input
             type="text"
             placeholder="Nama Lengkap"
-            className="w-full border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 p-3 rounded-lg outline-none transition"
+            className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition"
           />
           <input
             type="email"
             placeholder="Alamat Email"
-            className="w-full border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 p-3 rounded-lg outline-none transition"
+            className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition"
           />
           <textarea
             placeholder="Pesan Anda"
-            className="w-full border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 p-3 rounded-lg outline-none transition"
+            className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition"
             rows="5"
           ></textarea>
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition font-medium"
+            className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#38b6ff] to-[#2a9de6] text-white py-3 rounded-lg hover:from-[#2a9de6] hover:to-[#1e8bd1] transition font-medium shadow-md hover:shadow-lg active:scale-95"
           >
             <Send className="w-5 h-5" />
             Kirim Pesan
