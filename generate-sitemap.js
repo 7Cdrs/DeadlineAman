@@ -13,7 +13,6 @@ async function generateSitemap() {
     { url: "#pricing", changefreq: "monthly", priority: 0.8 },
     { url: "#projects", changefreq: "monthly", priority: 0.7 },
     { url: "#contact", changefreq: "monthly", priority: 0.7 },
-    { url: "#profile", changefreq: "monthly", priority: 0.7 },
   ];
 
   const sitemap = new SitemapStream({ hostname: SITE_URL });
