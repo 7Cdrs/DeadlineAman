@@ -3,7 +3,7 @@ import { createWriteStream } from "fs";
 import { resolve } from "path";
 
 // URL utama websitemu
-const SITE_URL = "https://deadline-aman.vercel.app";
+const SITE_URL = "https://www.deadlineaman.my.id/";
 
 async function generateSitemap() {
   // Daftar semua halaman utama di projectmu

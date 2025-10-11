@@ -28,9 +28,9 @@ export default function App() {
         content="Deadline Aman menyediakan solusi software custom dan website profesional untuk bisnis, startup, dan instansi. Didesain sesuai kebutuhan Anda."
       />
       <Meta property="og:type" content="website" />
-      <Meta property="og:url" content="https://deadline-aman.vercel.app/" />
-      <Meta property="og:image" content="https://deadline-aman.vercel.app/D rm.png" />
-      <Link rel="canonical" href="https://deadline-aman.vercel.app/" />
+      <Meta property="og:url" content="https://www.deadlineaman.my.id/" />
+      <Meta property="og:image" content="https://www.deadlineaman.my.id/D rm.png" />
+      <Link rel="canonical" href="https://www.deadlineaman.my.id/" />
       <meta name="google-site-verification" content="DfVkSwR-rbT1WTG4U4_rvM2cH0zqjDk0oY1meH12wco" />
       <Meta name="robots" content="index, follow" />
       <Meta charSet="utf-8" />
@@ -42,9 +42,9 @@ export default function App() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Deadline Aman",
-            "url": "https://deadline-aman.vercel.app",
-            "logo": "https://deadline-aman.vercel.app/D rm.png",
-            "description": "Deadline Aman adalah perusahaan software house yang menyediakan jasa pembuatan software custom, aplikasi bisnis, dan website profesional untuk berbagai sektor industri.",
+            "url": "https://www.deadlineaman.my.id/",
+            "logo": "https://www.deadlineaman.my.id/D rm.png",
+            "description": "Deadline Aman adalah penyedia jasa software house yang menyediakan jasa pembuatan software custom, aplikasi bisnis, dan website profesional untuk berbagai sektor industri.",
             "founder": {
               "@type": "Person",
               "name": "Tim Deadline Aman"
