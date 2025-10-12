@@ -34,7 +34,7 @@ export default function App() {
       <Meta property="og:url" content="https://www.deadlineaman.my.id/" />
       <Meta
         property="og:image"
-        content="https://www.deadlineaman.my.id/Drm.png"
+        content="https://www.deadlineaman.my.id/favicon.png"
       />
       <Link rel="canonical" href="https://www.deadlineaman.my.id/" />
       <Meta
@@ -42,6 +42,12 @@ export default function App() {
         content="DfVkSwR-rbT1WTG4U4_rvM2cH0zqjDk0oY1meH12wco"
       />
       <Meta name="robots" content="index, follow" />
+      <Link rel="icon" href="/favicon.png" />
+      <Link rel="shortcut icon" href="/favicon.png" />
+      <Link rel="apple-touch-icon" href="/favicon.png" />
+      <Meta itemProp="image" content="https://www.deadlineaman.my.id/favicon.png" />
+
+
       <Meta charSet="utf-8" />
       <script
         type="application/ld+json"
@@ -51,7 +57,8 @@ export default function App() {
             "@type": "Organization",
             "name": "Deadline Aman",
             "url": "https://www.deadlineaman.my.id/",
-            "logo": "https://www.deadlineaman.my.id/Drm.png",
+            "logo": "https://www.deadlineaman.my.id/favicon.png",
+            "image": "https://www.deadlineaman.my.id/favicon.png",
             "description":
               "Deadline Aman adalah penyedia jasa software house yang menyediakan jasa pembuatan software custom, aplikasi bisnis, dan website profesional untuk berbagai sektor industri.",
             "founder": {

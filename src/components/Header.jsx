@@ -42,7 +42,7 @@ export default function Header() {
           style={{ transitionDelay: '200ms' }}
         >
           <img 
-            src="/D rm.png" 
+            src="/favicon.png" 
             alt="DeadlineAman Logo" 
             className="w-8 h-8 sm:w-10 sm:h-10 object-contain transition-transform duration-300 group-hover:scale-110 flex-shrink-0"
           />

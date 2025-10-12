@@ -31,7 +31,7 @@ export default function ContactSection() {
     className="flex items-center gap-3"
   >
     <Mail className="text-[#38b6ff] w-5 h-5 flex-shrink-0" />
-    <span className="break-all">info@deadlineaman.com</span>
+    <span className="break-all">support@deadlineaman.my.id</span>
   </div>
             <div 
               data-aos="fade-right"
