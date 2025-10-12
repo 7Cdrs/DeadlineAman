@@ -99,7 +99,11 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="py-16 px-6 md:px-20 bg-white">
-      <h2 className="text-3xl font-semibold text-[#38b6ff] mb-10 text-center">
+      <h2 
+        data-aos="fade-down"
+        data-aos-duration="800"
+        className="text-3xl font-semibold text-[#38b6ff] mb-10 text-center"
+      >
         Capaian & Proyek
       </h2>
 
@@ -108,6 +112,9 @@ export default function ProjectsSection() {
           {projects.map((p, idx) => (
             <div
               key={idx}
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}
+              data-aos-duration="800"
               className="bg-white/80 backdrop-blur-md border border-[#38b6ff]/20 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 hover:border-[#38b6ff]/40"
             >
               <div className="flex justify-between items-center mb-3">
@@ -140,10 +147,10 @@ export default function ProjectsSection() {
           ))}
         </div>
       ) : (
-        // Desktop view - Slider
         <div className="relative max-w-7xl mx-auto px-16">
-          {/* Navigation Buttons */}
           <button
+            data-aos="fade-right"
+            data-aos-duration="600"
             onClick={goToPrev}
             className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-[#38b6ff] text-[#38b6ff] hover:text-white p-3 rounded-full shadow-lg transition duration-300 border border-[#38b6ff]/20"
             aria-label="Previous"
@@ -152,6 +159,8 @@ export default function ProjectsSection() {
           </button>
 
           <button
+            data-aos="fade-left"
+            data-aos-duration="600"
             onClick={goToNext}
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-[#38b6ff] text-[#38b6ff] hover:text-white p-3 rounded-full shadow-lg transition duration-300 border border-[#38b6ff]/20"
             aria-label="Next"
@@ -169,6 +178,9 @@ export default function ProjectsSection() {
               {projects.map((p, idx) => (
                 <div
                   key={idx}
+                  data-aos="zoom-in"
+                  data-aos-delay={idx * 100}
+                  data-aos-duration="800"
                   className="w-full md:w-1/3 flex-shrink-0 px-4"
                 >
                   <div className="bg-white/80 backdrop-blur-md border border-[#38b6ff]/20 rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 hover:border-[#38b6ff]/40 h-full">
@@ -203,7 +215,12 @@ export default function ProjectsSection() {
               ))}
             </div>
           </div>
-          <div className="flex justify-center gap-2 mt-8">
+          <div 
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="600"
+            className="flex justify-center gap-2 mt-8"
+          >
             {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
               <button
                 key={idx}

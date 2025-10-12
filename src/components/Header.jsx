@@ -4,8 +4,11 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    setIsVisible(true);
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
@@ -27,12 +30,16 @@ export default function Header() {
         scrolled
           ? "bg-white/70 backdrop-blur-md shadow-md"
           : "bg-transparent"
-      }`}
+      } ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
+      style={{ transition: 'transform 0.8s ease-out, opacity 0.8s ease-out' }}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         <div
           onClick={() => handleScrollTo("hero")}
-          className="flex items-center gap-3 cursor-pointer group"
+          className={`flex items-center gap-3 cursor-pointer group transform transition-all duration-700 ${
+            isVisible ? 'scale-100 opacity-100' : 'scale-75 opacity-0'
+          }`}
+          style={{ transitionDelay: '200ms' }}
         >
           <img 
             src="/D rm.png" 
@@ -44,6 +51,7 @@ export default function Header() {
             <span className="text-gray-800 group-hover:text-gray-900">lineAman</span>
           </span>
         </div>
+
         <nav className="hidden md:flex gap-10 font-medium text-gray-700">
           {[
             { id: "about", label: "Tentang" },
@@ -52,11 +60,14 @@ export default function Header() {
             { id: "contact", label: "Kontak" },
           ]
             .sort((a, b) => a.label.localeCompare(b.label))
-            .map((item) => (
+            .map((item, index) => (
               <span
                 key={item.id}
                 onClick={() => handleScrollTo(item.id)}
-                className="relative group cursor-pointer"
+                className={`relative group cursor-pointer transform transition-all duration-700 ${
+                  isVisible ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+                }`}
+                style={{ transitionDelay: `${300 + index * 100}ms` }}
               >
                 {item.label}
                 <span
@@ -67,11 +78,13 @@ export default function Header() {
               </span>
             ))}
         </nav>
+
         <button
           onClick={() => setOpen(!open)}
-          className={`md:hidden text-2xl focus:outline-none transition-colors duration-500 ${
+          className={`md:hidden text-2xl focus:outline-none transition-all duration-700 ${
             scrolled ? "text-[#38b6ff]" : "text-[#38b6ff]"
-          }`}
+          } ${isVisible ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}
+          style={{ transitionDelay: '200ms' }}
         >
           {open ? "✕" : "☰"}
         </button>
@@ -96,9 +109,12 @@ export default function Header() {
               { id: "pricing", label: "Harga" },
               { id: "projects", label: "Proyek" },
               { id: "contact", label: "Kontak" },
-            ].map((item) => (
-              <span
+            ].map((item, index) => (
+              <motion.span
                 key={item.id}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1, duration: 0.3 }}
                 onClick={() => handleScrollTo(item.id)}
                 className={`block py-2 w-full cursor-pointer transition-colors duration-300 ${
                   scrolled
@@ -107,7 +123,7 @@ export default function Header() {
                 }`}
               >
                 {item.label}
-              </span>
+              </motion.span>
             ))}
           </motion.div>
         )}
