@@ -4,14 +4,14 @@ const projects = [
   {
     name: "Website Keuangan",
     year: "2025",
-    desc: "Website akuntansi perusahaan berbasis Laravel dengan fitur manajemen akun & role, transaksi harian, dan laporan laba rugi otomatis",
+    desc: "Website akuntansi perusahaan berbasis Laravel dengan fitur manajemen akun & role, transaksi harian, dan laporan laba rugi otomatis.",
     tech: ["Laravel", "MySQL"],
     link: "https://jaladewachampion.com/"
   },
   {
     name: "Scheduro",
     year: "2025",
-    desc: "Produk ini berfokus membantu freelancer dan mahasiswa agar lebih produktif lewat fitur AI-driven Task Breakdown, kanban board sederhana, serta pengingat otomatis via WhatsApp.",
+    desc: "Produk yang membantu freelancer dan mahasiswa agar lebih produktif lewat fitur AI Task Breakdown, kanban board, dan pengingat otomatis via WhatsApp.",
     tech: ["Next.js", "TailwindCSS", "Express.js", "PostgreSQL"],
     link: "https://scheduro.com/"
   },
@@ -25,23 +25,30 @@ const projects = [
   {
     name: "AJarin",
     year: "2025",
-    desc: "AJarin adalah platform kursus online versi ringan yang menghadirkan pengalaman belajar modern dengan akses lifetime setelah pembayaran otomatis via Midtrans(Payment Gateway).",
+    desc: "Platform kursus online versi ringan dengan akses lifetime dan pembayaran otomatis via Midtrans (Payment Gateway).",
     tech: ["Flutter", "Laravel", "PostgreSQL"],
     link: "https://www.linkedin.com/posts/hazelmpr_bangun-solusi-meski-dengan-keterbatasan-activity-7350281283681337346-9QUT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
   },
   {
     name: "Chatbot AI untuk E-commerce",
     year: "2025",
-    desc: "Chatbot AI untuk E-commerce adalah solusi cerdas yang membantu meningkatkan interaksi pelanggan dan penjualan melalui otomatisasi percakapan.",
+    desc: "Solusi chatbot AI untuk meningkatkan interaksi pelanggan dan penjualan melalui otomatisasi percakapan di platform e-commerce.",
     tech: ["n8n", "Telegram", "OpenAI API"],
     link: "https://www.linkedin.com/posts/hazelmpr_ternyata-asik-juga-explore-tools-automation-activity-7352517609805811714-Ychk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
   },
   {
     name: "Aplikasi Toko Roti",
     year: "2025",
-    desc: "Aplikasi Toko Roti adalah solusi digital untuk mengelola inventaris, pemesanan, dan pengiriman, dengan dukungan pembayaran terintegrasi serta layanan berbasis lokasi.",
+    desc: "Aplikasi digital untuk mengelola inventaris, pemesanan, dan pengiriman toko roti dengan sistem pembayaran dan lokasi terintegrasi.",
     tech: ["Flutter"],
     link: "https://www.linkedin.com/posts/hazelmpr_bnsp-juniormobileprogrammer-activity-7351075589488791552-eMVb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
+  },
+  {
+    name: "Layanan Mandiri Pasien Interaktif",
+    year: "2025",
+    desc: "Aplikasi self-service pasien untuk mempercepat proses pendaftaran dan antrian di klinik, dengan fitur pencarian cepat, registrasi mandiri, dan nomor antrian otomatis.",
+    tech: ["Spring Boot", "Java", "React.js", "SSMS"],
+    link: "https://www.linkedin.com/in/zhulva-priya-abhipraya-a69475335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
   },
 ];
 

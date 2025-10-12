@@ -90,7 +90,7 @@ export default function AboutSection() {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div className="group">
             <div className="text-4xl md:text-5xl font-bold text-[#38b6ff] mb-2 group-hover:scale-110 transition-transform">
-              6+
+              7+
             </div>
             <p className="text-gray-600 font-medium">Proyek Selesai</p>
           </div>

@@ -17,7 +17,7 @@ export default function ProfileSection() {
       <h2 className="text-4xl font-bold text-[#38b6ff] mb-12">
         Tim Kami
       </h2>
-
+      
       <div className="flex flex-col md:flex-row justify-center items-center gap-10">
         {team.map((person) => (
           <div
