@@ -49,7 +49,7 @@ const projects = [
     year: "2025",
     desc: "Aplikasi self-service pasien untuk mempercepat proses pendaftaran dan antrian di klinik, dengan fitur pencarian cepat, registrasi mandiri, dan nomor antrian otomatis.",
     tech: ["Spring Boot", "Java", "React.js", "SSMS"],
-    link: "https://www.linkedin.com/in/zhulva-priya-abhipraya-a69475335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    link: " https://lnkd.in/gex9nTSX"
   },
 ];
 

@@ -36,7 +36,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-white mb-3 drop-shadow-md">Kontak</h3>
           <ul className="space-y-2 text-white/95">
             <li className="flex justify-center md:justify-start items-center gap-2 hover:text-white transition-colors duration-300 drop-shadow-sm">
-              <Mail className="w-4 h-4 text-white/90" /> info@deadlineaman.com
+              <Mail className="w-4 h-4 text-white/90" /> support@deadlineaman.my.id 
             </li>
             <li className="flex justify-center md:justify-start items-center gap-2 hover:text-white transition-colors duration-300 drop-shadow-sm">
               <Phone className="w-4 h-4 text-white/90" /> +62 812-5205-1253
