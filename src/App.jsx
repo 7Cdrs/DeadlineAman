@@ -22,49 +22,57 @@ export default function App() {
         name="keywords"
         content="jasa pembuatan software, jasa pembuatan website, software house, web development, sistem custom, aplikasi bisnis, Deadline Aman"
       />
-      <Meta property="og:title" content="Deadline Aman - Jasa Pembuatan Software & Website Custom" />
+      <Meta
+        property="og:title"
+        content="Deadline Aman - Jasa Pembuatan Software & Website Custom"
+      />
       <Meta
         property="og:description"
         content="Deadline Aman menyediakan solusi software custom dan website profesional untuk bisnis, startup, dan instansi. Didesain sesuai kebutuhan Anda."
       />
       <Meta property="og:type" content="website" />
       <Meta property="og:url" content="https://www.deadlineaman.my.id/" />
-      <Meta property="og:image" content="https://www.deadlineaman.my.id/D rm.png" />
+      <Meta
+        property="og:image"
+        content="https://www.deadlineaman.my.id/Drm.png"
+      />
       <Link rel="canonical" href="https://www.deadlineaman.my.id/" />
-      <meta name="google-site-verification" content="DfVkSwR-rbT1WTG4U4_rvM2cH0zqjDk0oY1meH12wco" />
+      <Meta
+        name="google-site-verification"
+        content="DfVkSwR-rbT1WTG4U4_rvM2cH0zqjDk0oY1meH12wco"
+      />
       <Meta name="robots" content="index, follow" />
       <Meta charSet="utf-8" />
-
-      {/* Schema.org JSON-LD untuk rich result */}
-      <script type="application/ld+json">
-        {`
-          {
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Deadline Aman",
             "url": "https://www.deadlineaman.my.id/",
-            "logo": "https://www.deadlineaman.my.id/D rm.png",
-            "description": "Deadline Aman adalah penyedia jasa software house yang menyediakan jasa pembuatan software custom, aplikasi bisnis, dan website profesional untuk berbagai sektor industri.",
+            "logo": "https://www.deadlineaman.my.id/Drm.png",
+            "description":
+              "Deadline Aman adalah penyedia jasa software house yang menyediakan jasa pembuatan software custom, aplikasi bisnis, dan website profesional untuk berbagai sektor industri.",
             "founder": {
               "@type": "Person",
-              "name": "Tim Deadline Aman"
+              "name": "Tim Deadline Aman",
             },
             "sameAs": [
               "https://www.linkedin.com/company/deadline-aman",
-              "https://instagram.com/deadlineaman"
+              "https://instagram.com/deadlineaman",
             ],
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+62-812-5205-1253",
               "contactType": "Customer Support",
               "areaServed": "ID",
-              "availableLanguage": "Indonesian"
-            }
-          }
-        `}
-      </script>
+              "availableLanguage": "Indonesian",
+            },
+          }),
+        }}
+      />
 
-      {/* 🧱 Struktur Asli Website (tidak diubah) */}
       <Header />
       <main>
         <HeroSection />

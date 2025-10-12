@@ -1,3 +1,7 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function ProfileSection() {
   const team = [
     {
@@ -12,67 +16,57 @@ export default function ProfileSection() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
   return (
-    <section className="py-24 bg-gradient-to-b from-blue-50 to-white text-center">
-      <h2 
+    <section className="py-24 bg-gradient-to-b from-blue-50 to-white text-center relative overflow-hidden">
+      <div className="absolute top-0 left-1/3 w-72 h-72 bg-[#38b6ff]/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-[#2a9de6]/10 rounded-full blur-3xl"></div>
+
+      <h2
+        className="text-4xl md:text-5xl font-bold text-[#38b6ff] mb-12 relative z-10"
         data-aos="fade-down"
-        data-aos-duration="800"
-        className="text-4xl font-bold text-[#38b6ff] mb-12"
       >
         Tim Kami
       </h2>
-      
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+      <div
+        className="flex flex-col md:flex-row justify-center items-center gap-10 relative z-10"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         {team.map((person, index) => (
           <div
             key={person.name}
-            data-aos="flip-up"
+            className="bg-white/80 backdrop-blur-md border border-[#38b6ff]/20 rounded-3xl shadow-lg p-8 w-72 sm:w-80 
+                       hover:shadow-2xl hover:border-[#38b6ff]/40 transition duration-500 transform hover:-translate-y-2"
+            data-aos="zoom-in-up"
             data-aos-delay={index * 200}
-            data-aos-duration="1000"
-            className="bg-white/80 backdrop-blur-md border border-[#38b6ff]/20 rounded-3xl shadow-lg p-8 w-80 hover:shadow-2xl hover:border-[#38b6ff]/40 transition duration-500 transform hover:-translate-y-2"
           >
-            <div className="relative">
-              <img
-                data-aos="zoom-in"
-                data-aos-delay={index * 200 + 300}
-                data-aos-duration="800"
-                src={person.image}
-                alt={person.name}
-                className="w-48 h-48 mx-auto rounded-full border-4 border-[#38b6ff] object-cover shadow-md hover:scale-105 transition-transform duration-500"
-              />
-              <div 
-                data-aos="fade-in"
-                data-aos-delay={index * 200 + 600}
-                data-aos-duration="500"
-                className="absolute bottom-2 right-8 w-6 h-6 bg-green-500 border-2 border-white rounded-full"
-              ></div>
+            <div className="relative flex justify-center">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#38b6ff] shadow-md">
+                <img
+                  src={person.image}
+                  alt={person.name}
+                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                />
+              </div>
+              <div className="absolute bottom-4 right-14 w-5 h-5 bg-green-500 border-2 border-white rounded-full shadow-sm"></div>
             </div>
-            <h3 
-              data-aos="fade-up"
-              data-aos-delay={index * 200 + 400}
-              data-aos-duration="700"
-              className="text-2xl font-semibold text-[#38b6ff] mt-6"
-            >
+
+            <h3 className="text-2xl font-semibold text-[#38b6ff] mt-6">
               {person.name}
             </h3>
-            <p 
-              data-aos="fade-up"
-              data-aos-delay={index * 200 + 500}
-              data-aos-duration="700"
-              className="text-gray-600 mt-2 text-lg"
-            >
-              {person.role}
-            </p>
+            <p className="text-gray-600 mt-2 text-lg">{person.role}</p>
           </div>
         ))}
       </div>
-
-      <div 
-        data-aos="zoom-in"
-        data-aos-delay="800"
-        data-aos-duration="600"
-        className="w-28 h-1 bg-gradient-to-r from-[#38b6ff] to-[#2a9de6] mx-auto mt-16 rounded-full"
-      ></div>
     </section>
   );
 }

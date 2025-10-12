@@ -26,17 +26,17 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full max-w-full overflow-x-hidden z-50 transition-all duration-500 ${
         scrolled
           ? "bg-white/70 backdrop-blur-md shadow-md"
           : "bg-transparent"
       } ${isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0'}`}
       style={{ transition: 'transform 0.8s ease-out, opacity 0.8s ease-out' }}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
         <div
           onClick={() => handleScrollTo("hero")}
-          className={`flex items-center gap-3 cursor-pointer group transform transition-all duration-700 ${
+          className={`flex items-center gap-2 sm:gap-3 cursor-pointer group transform transition-all duration-700 ${
             isVisible ? 'scale-100 opacity-100' : 'scale-75 opacity-0'
           }`}
           style={{ transitionDelay: '200ms' }}
@@ -44,15 +44,15 @@ export default function Header() {
           <img 
             src="/D rm.png" 
             alt="DeadlineAman Logo" 
-            className="w-10 h-10 object-contain transition-transform duration-300 group-hover:scale-110"
+            className="w-8 h-8 sm:w-10 sm:h-10 object-contain transition-transform duration-300 group-hover:scale-110 flex-shrink-0"
           />
-          <span className="text-2xl font-bold transition-colors">
+          <span className="text-lg sm:text-xl md:text-2xl font-bold transition-colors whitespace-nowrap">
             <span className="text-[#38b6ff] group-hover:text-[#2a9de6]">Dead</span>
             <span className="text-gray-800 group-hover:text-gray-900">lineAman</span>
           </span>
         </div>
 
-        <nav className="hidden md:flex gap-10 font-medium text-gray-700">
+        <nav className="hidden md:flex gap-6 lg:gap-10 font-medium text-gray-700">
           {[
             { id: "about", label: "Tentang" },
             { id: "pricing", label: "Harga" },
@@ -64,7 +64,7 @@ export default function Header() {
               <span
                 key={item.id}
                 onClick={() => handleScrollTo(item.id)}
-                className={`relative group cursor-pointer transform transition-all duration-700 ${
+                className={`relative group cursor-pointer transform transition-all duration-700 whitespace-nowrap ${
                   isVisible ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
                 }`}
                 style={{ transitionDelay: `${300 + index * 100}ms` }}
@@ -81,10 +81,11 @@ export default function Header() {
 
         <button
           onClick={() => setOpen(!open)}
-          className={`md:hidden text-2xl focus:outline-none transition-all duration-700 ${
+          className={`md:hidden text-xl sm:text-2xl focus:outline-none transition-all duration-700 flex-shrink-0 ${
             scrolled ? "text-[#38b6ff]" : "text-[#38b6ff]"
           } ${isVisible ? 'scale-100 opacity-100' : 'scale-75 opacity-0'}`}
           style={{ transitionDelay: '200ms' }}
+          aria-label="Toggle menu"
         >
           {open ? "✕" : "☰"}
         </button>
@@ -98,7 +99,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className={`md:hidden border-t text-center py-3 ${
+            className={`w-full md:hidden border-t text-center py-3 ${
               scrolled
                 ? "bg-white/90 backdrop-blur-md"
                 : "bg-[#38b6ff]/95 backdrop-blur-sm"
