@@ -9,7 +9,7 @@ const pricing = [
       "Domain .com + Hosting gratis 1 tahun",
       "3 halaman utama (Home, About, Contact)",
       "Desain responsif (mobile & desktop friendly)",
-      "Setup SEO dasar (meta tag, Google indexing)",
+      "Setup SEO dasar (meta tag, Google indexing, favicon)",
       "Integrasi WhatsApp & Google Maps",
       "Maintenance gratis 1 bulan",
     ],
@@ -26,6 +26,7 @@ const pricing = [
       "Sertifikat SSL + keamanan tambahan",
       "Integrasi Google Analytics",
       "Maintenance gratis 2 bulan",
+      "Email bisnis (yourname@yourdomain.com)"
     ],
   },
   {
