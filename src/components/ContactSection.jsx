@@ -131,7 +131,7 @@ export default function ContactSection() {
             data-aos-duration="600"
             type="email"
             name="user_email"
-            placeholder="Alamat Email"
+            placeholder="Alamat Email Anda"
             required
             className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition text-sm sm:text-base"
           />
