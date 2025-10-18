@@ -12,12 +12,7 @@ export default function PricingSection() {
 
   return (
     <section id="pricing" className="py-10 sm:py-12 md:py-16 bg-gray-50 text-center">
-      <button
-        onClick={switchLanguage}
-        className="mb-6 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full transition"
-      >
-        {t("buttons.switchLang")}
-      </button>
+     
 
       <h2
         data-aos="fade-down"
