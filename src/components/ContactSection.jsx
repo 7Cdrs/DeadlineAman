@@ -140,7 +140,7 @@ export default function ContactSection() {
             data-aos-delay="400"
             data-aos-duration="600"
             name="message"
-            placeholder="Pesan Anda"
+            placeholder="Pesan Anda Otomatis terkirim ke email kami"
             required
             className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition text-sm sm:text-base"
             rows="5"
