@@ -162,7 +162,7 @@ export default function Header() {
                   : "text-white hover:text-blue-100"
               }`}
             >
-              Translate
+              Pricing International
             </motion.button>
           </motion.div>
         )}
