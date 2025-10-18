@@ -39,7 +39,7 @@ export default function HeroSection() {
                      text-sm sm:text-base md:text-lg"
         >
           <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
-          <span>Solusi Digital Profesional</span>
+          <span>Professional Digital Solutions</span>
         </div>
         <h1
           data-aos="zoom-in"
@@ -47,9 +47,9 @@ export default function HeroSection() {
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold 
                      text-gray-800 mb-4 sm:mb-6 leading-tight px-2 max-w-4xl"
         >
-          Kami <span className="text-[#38b6ff]">Freelancer</span> yang
+          We are <span className="text-[#38b6ff]">Freelancer</span> who
           <br />
-          <span className="text-[#2a9de6]">Bangun Website Impianmu</span>
+          <span className="text-[#2a9de6]">build your dream website</span>
         </h1>
         <p
           data-aos="fade-up"
@@ -57,8 +57,7 @@ export default function HeroSection() {
           className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mb-8 sm:mb-10 
                      leading-relaxed px-4"
         >
-          Dari ide hingga realisasi — kami bantu bisnismu dan personal brand kamu
-          tampil profesional di dunia digital, dengan desain modern dan performa optimal.
+          From idea to realization — we help your business and personal brand appear professional in the digital world, with modern design and optimal performance.
         </p>
         <div
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
@@ -78,7 +77,7 @@ export default function HeroSection() {
               }`}
             ></span>
             <span className="relative flex items-center gap-2">
-              Lihat Portofolio
+              View Portfolio
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </span>
           </button>
@@ -92,7 +91,7 @@ export default function HeroSection() {
                        hover:shadow-[0_0_20px_rgba(56,182,255,0.6)] text-base sm:text-lg flex items-center justify-center"
           >
             <span className="relative z-10 transition-all duration-500 text-[#38b6ff] group-hover:text-white">
-              Konsultasi Gratis
+              Free Consultation
             </span>
             <span className="absolute inset-0 rounded-xl bg-[#38b6ff]/20 opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-500"></span>
           </a>

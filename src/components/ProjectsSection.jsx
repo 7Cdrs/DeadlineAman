@@ -3,51 +3,51 @@ import { useState, useEffect } from "react";
 
 const projects = [
   {
-    name: "Website Keuangan",
+    name: "Financial Website",
     year: "2025",
-    desc: "Website akuntansi perusahaan berbasis Laravel dengan fitur manajemen akun & role, transaksi harian, dan laporan laba rugi otomatis.",
+    desc: "Laravel-based corporate accounting website with account & role management features, daily transactions, and automatic profit and loss reports.",
     tech: ["Laravel", "MySQL"],
     link: "https://jaladewachampion.com/"
   },
   {
     name: "Scheduro",
     year: "2025",
-    desc: "Produk yang membantu freelancer dan mahasiswa agar lebih produktif lewat fitur AI Task Breakdown, kanban board, dan pengingat otomatis via WhatsApp.",
+    desc: "A product that helps freelancers and students be more productive through AI Task Breakdown features, kanban boards, and automatic reminders via WhatsApp.",
     tech: ["Next.js", "TailwindCSS", "Express.js", "PostgreSQL"],
     link: "https://scheduro.com/"
   },
   {
     name: "AquaNova",
     year: "2024",
-    desc: "Platform inovatif yang membantu industri akuakultur mengoptimalkan produksi ikan melalui pemantauan kualitas air secara real-time.",
+    desc: "An innovative platform that helps the aquaculture industry optimize fish production through real-time water quality monitoring.",
     tech: ["TailwindCSS", "Laravel", "PostgreSQL"],
     link: "https://aqua-nova.tech/"
   },
   {
     name: "AJarin",
     year: "2025",
-    desc: "Platform kursus online versi ringan dengan akses lifetime dan pembayaran otomatis via Midtrans (Payment Gateway).",
+    desc: "A lightweight version of the online course platform with lifetime access and automatic payments via Midtrans (Payment Gateway).",
     tech: ["Flutter", "Laravel", "PostgreSQL"],
     link: "https://www.linkedin.com/posts/hazelmpr_bangun-solusi-meski-dengan-keterbatasan-activity-7350281283681337346-9QUT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
   },
   {
-    name: "Chatbot AI untuk E-commerce",
+    name: "Chatbot AI for E-commerce",
     year: "2025",
-    desc: "Solusi chatbot AI untuk meningkatkan interaksi pelanggan dan penjualan melalui otomatisasi percakapan di platform e-commerce.",
+    desc: "AI chatbot solution to enhance customer interaction and sales through conversation automation on e-commerce platforms.",
     tech: ["n8n", "Telegram", "OpenAI API"],
     link: "https://www.linkedin.com/posts/hazelmpr_ternyata-asik-juga-explore-tools-automation-activity-7352517609805811714-Ychk?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
   },
   {
-    name: "Aplikasi Toko Roti",
+    name: "Application for Bakery Management",
     year: "2025",
-    desc: "Aplikasi digital untuk mengelola inventaris, pemesanan, dan pengiriman toko roti dengan sistem pembayaran dan lokasi terintegrasi.",
+    desc: "A digital application for managing inventory, orders, and deliveries for bakeries with integrated payment and location systems.",
     tech: ["Flutter"],
     link: "https://www.linkedin.com/posts/hazelmpr_bnsp-juniormobileprogrammer-activity-7351075589488791552-eMVb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEd9K7wBGNsNvV2PHabDD2TzXEFMhzYwktA"
   },
   {
-    name: "Layanan Mandiri Pasien Interaktif",
+    name: "Interactive Patient Self-Service",
     year: "2025",
-    desc: "Aplikasi self-service pasien untuk mempercepat proses pendaftaran dan antrian di klinik, dengan fitur pencarian cepat, registrasi mandiri, dan nomor antrian otomatis.",
+    desc: "A patient self-service application to speed up the registration and queuing process at the clinic, with quick search features, self-registration, and automatic queue numbers.",
     tech: ["Spring Boot", "Java", "React.js", "SSMS"],
     link: " https://lnkd.in/gex9nTSX"
   },
@@ -104,7 +104,7 @@ export default function ProjectsSection() {
         data-aos-duration="800"
         className="text-3xl font-semibold text-[#38b6ff] mb-10 text-center"
       >
-        Capaian & Proyek
+        Our Projects
       </h2>
 
       {isMobile ? (
@@ -141,7 +141,7 @@ export default function ProjectsSection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center text-[#38b6ff] hover:text-[#2a9de6] font-medium transition"
               >
-                Lihat Proyek <ExternalLink className="w-4 h-4 ml-1" />
+                See Project <ExternalLink className="w-4 h-4 ml-1" />
               </a>
             </div>
           ))}
@@ -208,7 +208,7 @@ export default function ProjectsSection() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-[#38b6ff] hover:text-[#2a9de6] font-medium transition"
                     >
-                      Lihat Proyek <ExternalLink className="w-4 h-4 ml-1" />
+                      See Project <ExternalLink className="w-4 h-4 ml-1" />
                     </a>
                   </div>
                 </div>

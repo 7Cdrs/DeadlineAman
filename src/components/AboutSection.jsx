@@ -5,33 +5,33 @@ export default function AboutSection() {
   const features = [
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Visi Kami",
-      desc: "Membantu bisnis berkembang melalui solusi teknologi yang inovatif dan efektif"
+      title: "Our Vision",
+      desc: "Helping businesses grow through innovative and effective technology solutions"
     },
     {
       icon: <Heart className="w-8 h-8" />,
-      title: "Misi Kami",
-      desc: "Menghadirkan produk digital yang estetis, fungsional, dan berdampak nyata"
+      title: "Our Mission",
+      desc: "Delivering digital products that are aesthetic, functional, and impactful"
     },
     {
       icon: <Code className="w-8 h-8" />,
-      title: "Keahlian Kami",
-      desc: "Fullstack development dengan teknologi modern dan best practices"
+      title: "Our Expertise",
+      desc: "Fullstack development with modern technology and best practices"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Kecepatan",
-      desc: "Pengerjaan cepat tanpa mengorbankan kualitas dan detail produk"
+      title: "Speed",
+      desc: "Fast execution without sacrificing product quality and detail"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Kolaboratif",
-      desc: "Komunikasi terbuka dan transparan di setiap tahap pengembangan"
+      title: "Collaborative",
+      desc: "Open and transparent communication at every stage of development"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Scalable",
-      desc: "Solusi yang dapat berkembang seiring pertumbuhan bisnis Anda"
+      desc: "Solutions that can grow with your business"
     }
   ];
 
@@ -47,7 +47,7 @@ export default function AboutSection() {
             data-aos-duration="800"
             className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#38b6ff] mb-3 sm:mb-4 px-2"
           >
-            Tentang Kami
+            About Us
           </h2>
           <div 
             data-aos="zoom-in"
@@ -61,9 +61,9 @@ export default function AboutSection() {
             data-aos-duration="800"
             className="max-w-3xl mx-auto text-gray-600 text-base sm:text-lg leading-relaxed px-2"
           >
-            Kami adalah tim pengembang freelance yang berfokus pada solusi digital modern. 
-            Dengan pengalaman di berbagai industri, kami siap mengubah ide Anda menjadi 
-            produk digital yang powerful dan user-friendly.
+            We are a team of freelance developers focused on modern digital solutions.
+            With experience across various industries, we are ready to transform your ideas into
+            powerful and user-friendly digital products.
           </p>
         </div>
 

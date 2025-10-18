@@ -14,10 +14,12 @@
     "@tailwindcss/vite": "^4.1.14",
     "aos": "^2.3.4",
     "framer-motion": "^12.23.22",
+    "i18next": "^25.6.0",
     "lucide-react": "^0.545.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-head": "^3.4.2",
+    "react-i18next": "^16.1.0",
     "sitemap": "^8.0.0",
     "tailwindcss": "^4.1.14"
   },

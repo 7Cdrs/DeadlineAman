@@ -1,0 +1,52 @@
+{
+  "pricing": {
+    "title": "Bundling & Pricing Internasional",
+    "packages": [
+      {
+        "name": "Basic",
+        "price": "$200",
+        "desc": "A simple professional-looking website. Perfect for portfolios, small businesses, or personal profiles.",
+        "features": [
+          ".com domain + 1-year free hosting",
+          "3 main pages (Home, About, Contact)",
+          "Responsive design (mobile & desktop friendly)",
+          "Basic SEO setup (meta tags, Google indexing, favicon)",
+          "WhatsApp & Google Maps integration",
+          "1 month free maintenance"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "$500",
+        "desc": "A complete business website ready to go online. Ideal for small to medium enterprises looking professional on the internet.",
+        "features": [
+          "All Basic package features",
+          "Blog / Article feature",
+          "Auto contact form (sent to email)",
+          "Speed optimization & advanced SEO",
+          "SSL certificate + extra security",
+          "Google Analytics integration",
+          "2 months free maintenance",
+          "Business email (yourname@yourdomain.com)"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "$1000",
+        "desc": "Custom website with dynamic system & advanced features. Ideal for large-scale businesses, startups, or institutions that need high flexibility.",
+        "features": [
+          "All Standard package features",
+          "Admin Dashboard (custom CMS)",
+          "External API integration (payment, IoT, etc.)",
+          "Multi-user & role management",
+          "Separate database & backend (scalable)",
+          "3 months support & maintenance",
+          "Exclusive UI/UX design"
+        ]
+      }
+    ]
+  },
+  "buttons": {
+    "switchLang": "Switch to Indonesian"
+  }
+}

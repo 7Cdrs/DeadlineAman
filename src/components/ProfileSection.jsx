@@ -34,7 +34,7 @@ export default function ProfileSection() {
         className="text-4xl md:text-5xl font-bold text-[#38b6ff] mb-12 relative z-10"
         data-aos="fade-down"
       >
-        Tim Kami
+        Our Team
       </h2>
       <div
         className="flex flex-col md:flex-row justify-center items-center gap-10 relative z-10"

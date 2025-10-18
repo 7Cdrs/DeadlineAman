@@ -11,22 +11,21 @@ export default function Footer() {
         <div className="sm:col-span-2 md:col-span-1">
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-2 sm:mb-3 drop-shadow-md">DeadlineAman</h2>
           <p className="text-white/95 text-sm sm:text-base leading-relaxed drop-shadow-sm max-w-md mx-auto md:mx-0">
-            Partner digital terpercaya untuk membangun website profesional,
-            cepat, dan siap scale. Kami bantu bisnis kamu tampil online dengan percaya diri.
+            Your trusted digital partner to build a professional, fast, and scalable website. We help your business go online with confidence.
           </p>
         </div>
         <div className="w-full">
-          <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 drop-shadow-md">Navigasi</h3>
+          <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 drop-shadow-md">Navigation</h3>
           <ul className="space-y-1.5 sm:space-y-2">
-            <li><a href="#about" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">Tentang Kami</a></li>
-            <li><a href="#projects" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">Proyek</a></li>
-            <li><a href="#pricing" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">Harga</a></li>
-            <li><a href="#contact" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">Kontak</a></li>
+            <li><a href="#about" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">About Us</a></li>
+            <li><a href="#projects" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">Projects</a></li>
+            <li><a href="#pricing" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">Pricing</a></li>
+            <li><a href="#contact" className="!text-white text-sm sm:text-base hover:!text-white/70 hover:translate-x-1 inline-block transition-all duration-300">Contact</a></li>
           </ul>
         </div>
 
         <div className="w-full">
-          <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 drop-shadow-md">Kontak</h3>
+          <h3 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 drop-shadow-md">Contact</h3>
           <ul className="space-y-1.5 sm:space-y-2 text-white/95 text-sm sm:text-base">
             <li className="flex justify-center md:justify-start items-center gap-2 hover:text-white transition-colors duration-300 drop-shadow-sm">
               <Mail className="w-4 h-4 flex-shrink-0 text-white/90" /> 
@@ -46,7 +45,7 @@ export default function Footer() {
       
       <div className="w-full border-t border-white/30 mt-6 sm:mt-8 md:mt-10 pt-3 sm:pt-4 text-center text-white/95 text-xs sm:text-sm relative z-10 px-4">
         <p>© {new Date().getFullYear()} <span className="text-white font-medium drop-shadow-md">DeadlineAman</span>. All rights reserved.</p>
-        <p className="mt-1 drop-shadow-sm">Kepuasan Anda adalah Prioritas Kami</p>
+        <p className="mt-1 drop-shadow-sm">Your Satisfaction is Our Priority</p>
       </div>
     </footer>
   );

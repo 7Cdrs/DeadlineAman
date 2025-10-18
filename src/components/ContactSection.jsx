@@ -14,20 +14,20 @@ export default function ContactSection() {
 
     emailjs
       .sendForm(
-        "service_0amjqi8",      // ganti dengan service ID dari EmailJS
-        "template_4q1d3wy",     // ganti dengan template ID
+        "service_0amjqi8",      // replace with your EmailJS service ID
+        "template_4q1d3wy",     // replace with your template ID
         form.current,
-        "KS0jjbVdeVzUA-dCo"       // ganti dengan public key
+        "KS0jjbVdeVzUA-dCo"     // replace with your public key
       )
       .then(
         (result) => {
-          console.log("Email berhasil dikirim:", result.text);
+          console.log("Email sent successfully:", result.text);
           setSuccess(true);
           setIsSending(false);
           form.current.reset();
         },
         (error) => {
-          console.error("Gagal mengirim email:", error.text);
+          console.error("Failed to send email:", error.text);
           setSuccess(false);
           setIsSending(false);
         }
@@ -46,7 +46,7 @@ export default function ContactSection() {
             data-aos-duration="800"
             className="text-2xl sm:text-3xl font-bold text-[#38b6ff] mb-3 md:mb-4"
           >
-            Hubungi Kami
+            Contact Us
           </h2>
           <p
             data-aos="fade-right"
@@ -54,7 +54,7 @@ export default function ContactSection() {
             data-aos-duration="800"
             className="text-sm sm:text-base text-gray-600 mb-4 md:mb-6"
           >
-            Punya ide atau proyek yang ingin diwujudkan? Kami siap bantu membangun solusi digital yang sesuai kebutuhanmu.
+            Have an idea or project you want to bring to life? We’re ready to help build a digital solution that fits your needs.
           </p>
 
           <div className="space-y-3 md:space-y-4 text-sm sm:text-base text-gray-700">
@@ -121,7 +121,7 @@ export default function ContactSection() {
             data-aos-duration="600"
             type="text"
             name="user_name"
-            placeholder="Nama Lengkap"
+            placeholder="Full Name"
             required
             className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition text-sm sm:text-base"
           />
@@ -131,7 +131,7 @@ export default function ContactSection() {
             data-aos-duration="600"
             type="email"
             name="user_email"
-            placeholder="Alamat Email Anda"
+            placeholder="Your Email Address"
             required
             className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition text-sm sm:text-base"
           />
@@ -140,7 +140,7 @@ export default function ContactSection() {
             data-aos-delay="400"
             data-aos-duration="600"
             name="message"
-            placeholder="Pesan Anda Otomatis terkirim ke email kami"
+            placeholder="Your message will be automatically sent to our email"
             required
             className="w-full border border-gray-300 focus:border-[#38b6ff] focus:ring-2 focus:ring-[#38b6ff]/20 p-3 rounded-lg outline-none transition text-sm sm:text-base"
             rows="5"
@@ -155,17 +155,17 @@ export default function ContactSection() {
             className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#38b6ff] to-[#2a9de6] text-white py-3 rounded-lg hover:from-[#2a9de6] hover:to-[#1e8bd1] transition font-medium shadow-md hover:shadow-lg active:scale-95 text-sm sm:text-base disabled:opacity-70"
           >
             <Send className="w-5 h-5" />
-            {isSending ? "Mengirim..." : "Kirim Pesan"}
+            {isSending ? "Sending..." : "Send Message"}
           </button>
 
           {success === true && (
             <p className="text-green-600 text-center text-sm sm:text-base">
-              ✅ Pesan berhasil dikirim!
+              ✅ Message sent successfully!
             </p>
           )}
           {success === false && (
             <p className="text-red-600 text-center text-sm sm:text-base">
-              ❌ Gagal mengirim pesan. Coba lagi nanti.
+              ❌ Failed to send message. Please try again later.
             </p>
           )}
         </form>

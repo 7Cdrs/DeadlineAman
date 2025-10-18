@@ -1,0 +1,52 @@
+{
+  "pricing": {
+    "title": "Bundling & Harga Indonesia",
+    "packages": [
+      {
+        "name": "Basic",
+        "price": "Rp2.000.000",
+        "desc": "Website sederhana dengan tampilan profesional. Cocok untuk portofolio, usaha kecil, atau profil personal.",
+        "features": [
+          "Domain .com + Hosting gratis 1 tahun",
+          "3 halaman utama (Home, About, Contact)",
+          "Desain responsif (mobile & desktop friendly)",
+          "Setup SEO dasar (meta tag, Google indexing, favicon)",
+          "Integrasi WhatsApp & Google Maps",
+          "Maintenance gratis 1 bulan"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "Rp5.000.000",
+        "desc": "Website bisnis lengkap siap online. Cocok untuk perusahaan kecil–menengah yang ingin tampil profesional di internet.",
+        "features": [
+          "Semua fitur Paket Basic",
+          "Fitur Blog / Artikel",
+          "Formulir kontak otomatis (terkirim ke email)",
+          "Optimasi kecepatan & SEO lanjutan",
+          "Sertifikat SSL + keamanan tambahan",
+          "Integrasi Google Analytics",
+          "Maintenance gratis 2 bulan",
+          "Email bisnis (yourname@yourdomain.com)"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "Rp10.000.000",
+        "desc": "Website custom dengan sistem dinamis & fitur canggih. Ideal untuk bisnis skala besar, startup, atau instansi yang butuh fleksibilitas tinggi.",
+        "features": [
+          "Semua fitur Paket Standard",
+          "Dashboard Admin (CMS custom)",
+          "Integrasi API eksternal (pembayaran, IoT, dsb.)",
+          "Multi-user & role management",
+          "Database & backend terpisah (scalable)",
+          "Support & maintenance 3 bulan",
+          "Desain UI/UX eksklusif"
+        ]
+      }
+    ]
+  },
+  "buttons": {
+    "switchLang": "Ganti ke English"
+  }
+}
