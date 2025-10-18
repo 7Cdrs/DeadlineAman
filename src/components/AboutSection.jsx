@@ -105,7 +105,7 @@ export default function AboutSection() {
             <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#38b6ff] mb-1 sm:mb-2 group-hover:scale-110 transition-transform">
               7+
             </div>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">Proyek Selesai</p>
+            <p className="text-sm sm:text-base text-gray-600 font-medium">Project Completed</p>
           </div>
           <div 
             data-aos="flip-left"
@@ -116,7 +116,7 @@ export default function AboutSection() {
             <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#38b6ff] mb-1 sm:mb-2 group-hover:scale-110 transition-transform">
               100%
             </div>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">Kepuasan Client</p>
+            <p className="text-sm sm:text-base text-gray-600 font-medium">Client Satisfaction</p>
           </div>
           <div 
             data-aos="flip-left"
@@ -127,7 +127,7 @@ export default function AboutSection() {
             <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#38b6ff] mb-1 sm:mb-2 group-hover:scale-110 transition-transform">
               2+
             </div>
-            <p className="text-sm sm:text-base text-gray-600 font-medium">Tahun Pengalaman</p>
+            <p className="text-sm sm:text-base text-gray-600 font-medium">Years of Experience</p>
           </div>
           <div 
             data-aos="flip-left"
