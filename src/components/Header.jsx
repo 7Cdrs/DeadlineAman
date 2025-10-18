@@ -26,12 +26,6 @@ export default function Header() {
     setOpen(false);
   };
 
-  // 🔘 Ganti bahasa otomatis toggle ID ↔ EN
-  const handleLanguageToggle = () => {
-    const newLang = i18n.language === "id" ? "en" : "id";
-    i18n.changeLanguage(newLang);
-  };
-
   return (
     <header
       className={`fixed top-0 left-0 w-full max-w-full overflow-x-hidden z-50 transition-all duration-500 ${
@@ -87,17 +81,6 @@ export default function Header() {
                 ></span>
               </span>
             ))}
-
-          {/* 🌐 Tombol Translate */}
-          <button
-            onClick={handleLanguageToggle}
-            className={`relative group cursor-pointer transform transition-all duration-700 font-semibold ${
-              isVisible ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
-            } ${scrolled ? "text-[#38b6ff]" : "text-white"} hover:text-[#2a9de6]`}
-            style={{ transitionDelay: '800ms' }}
-          >
-             Pricing International
-          </button>
         </nav>
 
         {/* 🔹 Tombol Mobile Menu */}
@@ -149,21 +132,6 @@ export default function Header() {
                 {item.label}
               </motion.span>
             ))}
-
-            {/* 🌐 Tambah Translate di Menu Mobile juga */}
-            <motion.button
-              onClick={handleLanguageToggle}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.5, duration: 0.3 }}
-              className={`block py-2 w-full cursor-pointer font-semibold transition-colors duration-300 ${
-                scrolled
-                  ? "text-[#38b6ff] hover:text-[#2a9de6]"
-                  : "text-white hover:text-blue-100"
-              }`}
-            >
-              Pricing International
-            </motion.button>
           </motion.div>
         )}
       </AnimatePresence>

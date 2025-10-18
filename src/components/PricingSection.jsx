@@ -5,14 +5,30 @@ export default function PricingSection() {
   const { t, i18n } = useTranslation();
   const pricing = t("pricing.packages", { returnObjects: true });
 
+  // 🔘 Toggle Bahasa (dari fungsi tombol lama)
   const switchLanguage = () => {
     const newLang = i18n.language === "id" ? "en" : "id";
     i18n.changeLanguage(newLang);
   };
 
   return (
-    <section id="pricing" className="py-10 sm:py-12 md:py-16 bg-gray-50 text-center">
-     
+    <section
+      id="pricing"
+      className="py-10 sm:py-12 md:py-16 bg-gray-50 text-center"
+    >
+      {/* 🔹 Tombol Pricing International (pindahan dari Header) */}
+      <div className="flex justify-center mb-6 sm:mb-8">
+        <button
+          onClick={switchLanguage}
+          className="px-4 py-2 text-sm sm:text-base font-semibold rounded-lg transition-all duration-300"
+          style={{
+            backgroundColor: "#38b6ff",
+            color: "#ffffff",
+          }}
+        >
+          Pricing International
+        </button>
+      </div>
 
       <h2
         data-aos="fade-down"
