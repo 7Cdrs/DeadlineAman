@@ -33,7 +33,7 @@ export default function Footer() {
             </li>
             <li className="flex justify-center md:justify-start items-center gap-2 hover:text-white transition-colors duration-300 drop-shadow-sm">
               <Phone className="w-4 h-4 flex-shrink-0 text-white/90" /> 
-              <span className="whitespace-nowrap">+62 812-5205-1253</span>
+              <span className="whitespace-nowrap">+62 857-3284-8348</span>
             </li>
             <li className="flex justify-center md:justify-start items-center gap-2 hover:text-white transition-colors duration-300 drop-shadow-sm">
               <MapPin className="w-4 h-4 flex-shrink-0 text-white/90" /> 

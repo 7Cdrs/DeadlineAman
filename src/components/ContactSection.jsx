@@ -74,7 +74,7 @@ export default function ContactSection() {
               className="flex items-center gap-3"
             >
               <Phone className="text-[#38b6ff] w-5 h-5 flex-shrink-0" />
-              <span>+62 812-5205-1253</span>
+              <span>+62 857-3284-8348</span>
             </div>
             <div
               data-aos="fade-right"
